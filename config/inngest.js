@@ -5,7 +5,7 @@ import User from "@/models/User";
 // Create a client to send and receive events
 export const inngest = new Inngest({ id: "quickcart-next" });
 
-//Inggest Function to save user data to a database
+//Inggest Function to save user data to a DB
 export const syncUserCreation = inngest.createFunction(
     {
         id: 'sync-user-from-clerk'
@@ -25,7 +25,7 @@ export const syncUserCreation = inngest.createFunction(
     }
 )
 
-//Inggest Function to Update user data in database
+//Inggest Function to Update user data in DB
 export const syscUserUpdation = inngest.createFunction(
     {
         id: 'update-user-from-clerk'
@@ -45,7 +45,7 @@ export const syscUserUpdation = inngest.createFunction(
     }   
 )
 
-//Inggest Function To Delete user data in database
+//Inggest Function To Delete user data in DB
 export const syscUserDeletion = inngest.createFunction
 (
     {
